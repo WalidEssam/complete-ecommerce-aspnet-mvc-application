@@ -7,11 +7,11 @@ namespace eTickets.Models
         [Key]
         public int Id { get; set; }
         [Display(Name = "Profile Picture URL")]
-        [Required(ErrorMessage = "Profile Picture Is Required")]
         public string ProfilePictureURL { get; set; }
         [Display(Name = "Full Name")]
         [Required(ErrorMessage = "Full Name Is Required")]
         public string FullName { get; set; }
+        [Required(ErrorMessage = "Bio Is Required")]
         public string Bio { get; set; }
 
         // relationships
